@@ -16,3 +16,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           path: coverage/coverage-summary.json
           title: Karma Test Coverage
+      - name: path
+        run: |
+          cd coverage
+          ls
