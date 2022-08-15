@@ -15,9 +15,5 @@ jobs:
     - run: npm install
     - name: Jest
       run: npm run test
-    - name: Comment Test Coverage
-      uses: AthleticNet/comment-test-coverage@1.1
-      with:
-        token: ${{ secrets.GITHUB_TOKEN }}
-        path: coverage/coverage-final.json
-        title: Karma Test Coverage
+    - name: Jest coverage comment
+      uses: MishaKav/jest-coverage-comment@main
